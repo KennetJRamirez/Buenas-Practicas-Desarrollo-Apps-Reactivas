@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper, top=2.4cm, bottom=2.4cm, left=2.4cm, right=2.4cm]{geometry}
+\usepackage{times} % Times New Roman
+\setlength{\parindent}{0pt}
+\usepackage[spanish]{babel}
+\usepackage{url}
+
+\begin{document}
+
+\begin{center}
+    {\bfseries\uppercase{Buenas practicas para aplicaciones reactivas}} \\
+    {\itshape K.J Guzman Ramirez}\\
+    {\itshape 7690-21-2903 Universidad Mariano Galvez} \\
+    {\itshape Seminario de Tecnologias de Informacion} \\
+    {\itshape kguzmanr2@miumg.edu.gt} \\
+\end{center}
+
+\textbf{URL REPOSITORIO LA TEX: } \\
+https://github.com/KennetJRamirez/Buenas-Practicas-Desarrollo-Apps-Reactivas
+
+\vspace{1em}
+\noindent\textbf{Resumen}\\
+En este articulo se desarrollo un analisis sobre las buenas practicas para el desarrollo de aplicaciones reactivas. Para lo cual, se tomo un punto de partida sobre la definicion de este tipo de aplicaciones y sus bases fundamentales. Se abordaron tambien los beneficios de aplicar correctamente dichas practicas, como el mejor rendimiento, distribucion eficiente de recursos y la posibilidad de escalabilidad. Como resultado se concluye que aplicar buenas practicas permite tener como resultado aplicaciones mas capaces de adaptarse dinamicamente a la carga de trabajo, manteniendo siempre una agradable experiencia fluida, perceptible a eventos y confiable al usuario final, incluso si las condiciones son de una demanda alta o errores parciales aislados para su posible resolucion. \\
+
+\noindent\textbf{Palabras clave: } asincrono, modulos, reactivo, escalabilidad, eficiencia.
+
+\vspace{1em}
+\noindent\textbf{Desarrollo del tema} \\
+Las aplicaciones reactivas son aquellas que nacen del paradigma de la programacion asincrona. Siendo asi que tiende a enfocarse en manejar el flujo de los datos para luego reaccionar a los cambios en tiempo real. 
+Todo esto naciendo debido al gran auge que tenian las aplicaciones web, en las cuales su objetivo es el brindar una buena experiencia a los usuarios, ademas de la capacidad de respuestas a dichas acciones. Ya que la forma tradicional en que se abordaba estas necesidades, se quedaban cortas en la complejidad de las solicitudes y al crecicimento en cuanto a la demanda de los servicios. Siendo la solucion a dicho problemas las aplicaciones reactivas, las cuales ya abordaban el crear aplicaciones con mejores capacidades para responder y que a su vez no afecten la interaccion del usuario, como lo podria ser el consumir mas recursos. 
+Las aplicaciones reactivas se basan principalmente en cuatro pilares fundamentales que se encargan de que estas respondan, sean escalables y robusta: 
+
+\begin{itemize}
+    \item\textbf{Capacidad de respuesta:} Esto indica que los tiempos de respuesta se deben de garantizar que sean lo mas rapido posible. Ya que esto va a permitir  brindar el servicio aunque las cargas sean demasiado pesadas o sucedan posibles errores de sistema. 
+    \item\textbf{Disponibilidad:} Esto indica que siempre deben de tratar de estar funcionando aunque lleguen a ocurrir errores o caidas, deben de ser capaces de poder recuperarse rapidamente y seguir operando con normalidad. Siendo dicho de otra forma que si ocurre un error, sea posible aislarlo y que no comprometa todo el funcionamiento de la aplicacion, siendo mas facil de detectar el error ya aislado y darle solucion. 
+    \item \textbf{Adaptabilidad:} Esto indica que siempre deben de poder adaptarse a las cargas que presenten de forma automatica, siendo que si es bajo , debe de destinar los recursos minimos, pero si es un flujo alto, destinar mas recursos segun sea necesario. Para poder garantizar el procesar las solicitudes sin afectar el rendimiento ni tiempos de respuesta.
+    \item\textbf{Arquitectura basada en mensajes:} Esto indica que la comunicacion entre los componentes debe ser independiente, utilizando el intercambio de mensajes de forma asincrona para evitar la dependencia, lo que permite una buena escalabilidad y flexibilidad del sistema.
+
+\end{itemize}
+
+\vspace{1em}
+\textbf{Ventajas de aplicar buenas practicas} \\
+Aporta varios beneficios al desarrollo moderno. Ya que ayuda a los desarrolladores a crear aplicaciones mas eficientes, escalables y a la vez que se minimizan los errores y el mantenimiento a las mismas. Entre estas se pueden mencionar:
+\begin{itemize}
+    \item\textbf{Rendimiento:} Ayudan a que el funcionamiento de las aplicaciones sea mas rapido debido a que los bloques independientes no deben de esperar y quedarse bloqueados. Ya que en lugar de eso, todos funcionan al mismo tiempo y dar respuesta simplemente cuando ocurra un evento.  Siendo asi que todo el procesamiento es mas rapido y permite el ahorro de recursos del sistema.
+    \item \textbf{Uso de recursos: } Debido a que se basa principalmente en asincronia, suelen consumir menos recursos. Siendo de gran ayuda cuando se maneja un numero alto de usuarios concurrentes.
+    \item\textbf{Tiempos de respuesta en UI/UX: } Debido a su enfoque reactivo, hace que cada vez que se realizar un nuevo evento, todo se actualice correctamente en la pantalla, sin que el usuario tenga que recargar nuevamente, todo es en tiempo real en base a eventos.
+    \item\textbf{Errores simplificados: } Cualquier error que se presente se maneja de forma centralizada,lo que permite un mejor control y aislamiento del mismo, sin tener que comprometer todo el funcionamiento de la aplicacion, garantizando que aun siga en pie.
+    \item\textbf{Escalabilidad: } Debido a su enfoque que es capaz de soportar multipes cargas de trabajo, garantiza que siga teniendo un buen rendimiento sin importar que el numero de usuarios o complejidad del sistema aumente mas. 
+\end{itemize}
+
+\textbf{Bibliotecas y herramientas}\\ 
+A medida que aumenta mas las aplicaciones reactivas, aumentan la cantidad de herramientas que hacen posible su desarrollo: 
+\begin{itemize}
+    \item\textbf{RxJava:} Permite el uso de secuencias observables para manejar eventos asincronos, concurrencia y errores de forma eficiente.
+    \item\textbf{Proyector Reactor: } Es una libreria reactiva que permite manejar el flujo de datos de tipo asincronos, facilitando el desarrollo de apps concurrentes y eficientes evitando la programacion no bloqueante.
+    \item\textbf{AKKA: } Se basa en el modelo Actor para construir sistemas concurrentes y tolerantes a fallos, facilitando la comunicacion entre componentes distribuidos. 
+    \item\textbf{RSocket: } Permite la comunicacion reactiva eficiente entre cliente y servidor, manejando la contrapresion.
+\end{itemize}
+
+\textbf{Buenas practicas} 
+\begin{itemize}
+    \item\textbf{Adoptar la inmutabilidad:} Esto ayuda a evitar problemas al no modificar directamente sobre los datos. Esto nos garantiza el flujo coherente y predecible de los datos a lo largo de la aplicacion. 
+    
+    \item\textbf{Adoptar tecnologias y herramientas estandarizadas: } Es importante seleccionar el grupo de herramientas que se adapten al tipo de necesidad de sistema reactivo a implementar, para aprovechar sus beneficios, como la contrapersion,escalabilidad, etc.
+
+     \item\textbf{Flujos de eventos: } Siempre se debe tener con anticipacion como sera el flujo de cada evento en el sistema, tales como la gestion de errores, terminacion, gestion de procesos, con el fin de poder tener un mejor analisis y desarollo.
+
+     \item\textbf{Eficiencia en los recursos: } Es vital el definir cada uno de los procesos para minimizar las latencias y costos en comunicacion, mas si se trabajan en entornos de la nube.
+
+     \item\textbf{Buen manejo de componentes: } El trabajar con modulos ayuda a simplificar el proceso y a permitir que sea posible su escalabilidad si es necesario. Ademas de permitir que todo actue de forma independiente , facilitando el mantenimiento.
+
+     \item\textbf{Centrarse en el diseño sin estado: } Ayuda a mejorar el crecimiento y el control de los errores para prevenir que cada uno de los componentes dependan de datos persistentes. Minimiza la atencion de eventos y mejora el mantenimiento.
+
+    \item\textbf{Elegir siempre la asincronia: } Se usa con el fin de lograr tener mas eficiencia y recepcion de eventos. Este enfoque no genera bloqueos y mejora el uso de los recursos, ademas de manejar los eventos para buscar el maximo rendimiento y la posibilidad de ser escalable a futuro.
+
+    \item\textbf{Manejo de contrapresion: } Es vital para que los usuarios regulen el ritmo de los datos, para evitar las sobrecargas y que el flujo del proceso sea eficiente incluso si hay mucha demanda del sistema.
+\end{itemize}
+
+\noindent\textbf{Observaciones y comentarios} \\
+Aunque las aplicacion reactivas dan muchos beneficios, su implementacion requiere de un conocimiento profundo desde las bases y herramientas. Ademas es necesario considerar los desafios que puede haber en cada necesidad en especifico, siendo asi una oportunidad de estudio para futuros trabajos de investigacion. 
+\vspace{1em}
+\\ Las aplicaciones reactivas tambien representan un enorme desafio ya que se deben de tener muy definido en si como es que se comportan los temas de asincronia y eventos, siendo que para un desarrollador que empieza desde 0 no seria recomendable debido a la enorme curva de aprendizaje que tiene y que aun crece dia a dia.
+\vspace{1em} \\
+\noindent\textbf{Conclusiones} \\
+Se llego a la conclusion de que las aplicaciones reactivas si se siguen correctamente las recomendaciones de su implementacion, se obtienen enormes resultados que benefician tanto al cliente como al sistema.
+\vspace{1em}
+\\ Se llego a la conclusion de que las aplicaciones reactivas son capaces de no hacer que todo el funcionamiento este disponible aun si se encuentra con fallas, ya que debido a su sistema modular e independiente, es mas sencillo encontrar el error, sin comprometer la disponibilidad completa de la aplicacion. \\
+
+
+\noindent\textbf{Egrafia}
+Outsystems. (s.f.). Best practices for reactive web apps. https://www.outsystems.com/blog/posts/best-practices-reactive-web-app/ \\
+
+Manoj, M. (2022). Reactive programming: A beginner's guide. freeCodeCamp. https://www.freecodecamp.org/news/reactive-programming-beginner-guide/ \\
+
+AppMaster. (2023). Programación reactiva: Arquitectura de software moderna. https://appmaster.io/es/blog/programacion-reactiva-arquitectura-de-software-moderna \\
+
+Rouse, M. (s.f.). Reactive programming. TechTarget. https://www.techtarget.com/searchapparchitecture/definition/reactive-programming
+
+\end{document}
